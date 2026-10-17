@@ -197,6 +197,7 @@
   }
   function move(direction) { if (direction<0 && position>0) position--; else if (direction>0 && currentWord()) position++; else return; revealed=false; if(mode==='today'&&category==='all')today.cursor=position;renderStudy();save(); }
   function setView(next) {
+    if (next !== view) stopPronunciation();
     closeLookup();
     view = next;
     ['learn','test','collection'].forEach(name => { $(`${name==='learn'?'learning':name}-view`).hidden = name!==view; $(`nav-${name}`).classList.toggle('active',name===view); $(`nav-${name}`).setAttribute('aria-current',name===view?'page':'false'); });
@@ -227,7 +228,7 @@
     if(detailId===id&&$('detail-dialog').open)$('detail-review').textContent=state.ratings[id]==='review'?'Remove from review':'Add to review';
     toast(state.ratings[id]==='review'?'Added to review.':'Removed from review.');
   }
-  function openDetail(id) { const word=BY_ID.get(id);if(!word)return;closeLookup();detailId=id;$('detail-category').textContent=`${word.level} · ${word.kind === "word" ? "Word" : word.kind === "idiom" ? "Idiom" : "Phrasal verb"} · ${word.category} · ${posName(word.pos)}`;$('detail-title').textContent=word.word;$('detail-meaning').textContent=word.meaning;$('detail-example').textContent=word.example;$('detail-translation').textContent=word.translation;$('detail-review').textContent=state.ratings[id]==='review'?'Remove from review':'Add to review';$('detail-dialog').showModal(); }
+  function openDetail(id) { const word=BY_ID.get(id);if(!word)return;stopPronunciation();closeLookup();detailId=id;$('detail-category').textContent=`${word.level} · ${word.kind === "word" ? "Word" : word.kind === "idiom" ? "Idiom" : "Phrasal verb"} · ${word.category} · ${posName(word.pos)}`;$('detail-title').textContent=word.word;$('detail-meaning').textContent=word.meaning;$('detail-example').textContent=word.example;$('detail-translation').textContent=word.translation;$('detail-review').textContent=state.ratings[id]==='review'?'Remove from review':'Add to review';$('detail-dialog').showModal(); }
   function renderTest(focus=false) {
     const eligible=C.canQuiz(state,todayKey),quiz=today.quiz;
     const gated=!eligible||!quiz;
@@ -258,7 +259,36 @@
     quiz.ids.forEach((id,index)=>{const word=BY_ID.get(id),isCorrect=correct.has(id),row=make('div',`answer-review-row${isCorrect?'':' incorrect'}`),top=make('div','answer-review-top'),meaning=make('strong','',`${index+1}. ${word.meaning}`);meaning.lang='ko';top.append(meaning,make('span','',isCorrect?'CORRECT':'INCORRECT'));const detail=make('div','answer-detail');detail.append(make('span','',`Your answer: ${quiz.answers[id]?.trim()||'(no answer)'}`));const answer=make('span','');answer.append(document.createTextNode('Correct spelling: '),make('strong','',word.word));detail.append(answer);row.append(top,detail);$('answer-review-list').append(row);});
   }
   function startTest() {if(!C.canQuiz(state,todayKey)){mode='unseen';category='all';$('category-select').value='all';beginStudy();setView('learn');return;}C.startQuiz(state,todayKey);save();renderTest(true);renderStats();}
-  function speak(){const word=currentWord();if(!word)return;if(!('speechSynthesis'in window)||!('SpeechSynthesisUtterance'in window)){toast('Pronunciation is not supported in this browser.');return;}window.speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(word.word);utterance.lang='en-US';utterance.rate=.85;const voice=window.speechSynthesis.getVoices().find(v=>v.lang==='en-US');if(voice)utterance.voice=voice;utterance.onerror=e=>{if(!['canceled','interrupted'].includes(e.error))toast('Audio could not be played. Check your browser voice settings.');};window.speechSynthesis.speak(utterance);}
+  let speechRequest = 0;
+  function stopPronunciation() { speechRequest++; window.speechSynthesis?.cancel(); }
+  function britishVoice() { return window.speechSynthesis.getVoices().find(voice => /^en[-_]gb(?:[-_]|$)/i.test(voice.lang)) || null; }
+  function waitForBritishVoice() {
+    const voice = britishVoice(); if (voice) return Promise.resolve(voice);
+    return new Promise(resolve => {
+      const synth = window.speechSynthesis;
+      let finished = false, timer;
+      const finish = () => { if(finished)return;finished=true;clearTimeout(timer);synth.removeEventListener?.('voiceschanged',onChange);resolve(britishVoice()); };
+      const onChange = () => { if(britishVoice())finish(); };
+      synth.addEventListener?.('voiceschanged',onChange);
+      timer = setTimeout(finish,1200);
+      onChange();
+    });
+  }
+  async function speak() {
+    const word = currentWord(); if (!word) return;
+    if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) { toast('Pronunciation is not supported in this browser.'); return; }
+    const request = ++speechRequest;
+    window.speechSynthesis.cancel();
+    const voice = await waitForBritishVoice();
+    if (request !== speechRequest || word.id !== currentWord()?.id || view !== 'learn') return;
+    if (!voice) { toast('An English (United Kingdom) voice is not available. Enable one in your browser or device settings.'); return; }
+    const utterance = new SpeechSynthesisUtterance(word.word);
+    utterance.lang = 'en-GB'; utterance.voice = voice; utterance.rate = .85;
+    utterance.onerror = event => { if(!['canceled','interrupted'].includes(event.error))toast('Audio could not be played. Check your browser voice settings.'); };
+    window.speechSynthesis.speak(utterance);
+  }
+  // Start loading device voices before the first pronunciation button press.
+  if ('speechSynthesis' in window) window.speechSynthesis.getVoices();
   $('word-button').addEventListener('click',action(reveal));$('reveal-button').addEventListener('click',action(reveal));$('audio-button').addEventListener('click',action(speak));
   $('hide-meaning').addEventListener('click',action(() => {if(revealed)reveal();}));
   $('lookup-close').addEventListener('click',() => closeLookup(true));
@@ -272,7 +302,7 @@
   $('result-study').addEventListener('click',action(()=>{mode='today';category='all';$('category-select').value='all';beginStudy();setView('learn');}));
   $('quiz-answer').addEventListener('input',action(()=>{captureAnswer();renderQuizProgress();}));$('quiz-form').addEventListener('submit',action(e=>{e.preventDefault();nextQuestion(1);}));$('quiz-next').addEventListener('click',action(()=>nextQuestion(1)));$('quiz-previous').addEventListener('click',action(()=>nextQuestion(-1)));$('quiz-submit-top').addEventListener('click',action(requestSubmit));$('cancel-submit').addEventListener('click',()=>{$('submit-dialog').close();$('quiz-answer').focus();});$('confirm-submit').addEventListener('click',action(()=>{const result=C.submitQuiz(state,todayKey);if(!result)return;$('submit-dialog').close();save();renderTest();renderStats();$('result-title').setAttribute('tabindex','-1');$('result-title').focus({preventScroll:true});}));
   $('word-search').addEventListener('input',action(()=>renderCollection(true)));$('collection-filter').addEventListener('change',action(()=>renderCollection(true)));$('collection-kind').addEventListener('change',action(()=>renderCollection(true)));$('load-more').addEventListener('click',action(()=>{collectionLimit+=100;renderCollection();}));$('detail-close').addEventListener('click',()=>$('detail-dialog').close());$('detail-review').addEventListener('click',action(()=>{if(detailId)toggleReview(detailId);}));
-  function showAbout(){closeLookup();$('reset-confirm').hidden=true;$('reset-progress').hidden=false;$('about-dialog').showModal();}
+  function showAbout(){stopPronunciation();closeLookup();$('reset-confirm').hidden=true;$('reset-progress').hidden=false;$('about-dialog').showModal();}
   $('about-button').addEventListener('click',showAbout);$('mobile-about').addEventListener('click',showAbout);$('about-close').addEventListener('click',()=>$('about-dialog').close());$('reset-progress').addEventListener('click',()=>{$('reset-confirm').hidden=false;$('reset-progress').hidden=true;});$('cancel-reset').addEventListener('click',()=>{$('reset-confirm').hidden=true;$('reset-progress').hidden=false;});
   $('confirm-reset').addEventListener('click',action(()=>{state=C.emptyState();today=C.day(state,todayKey);mode='today';category='all';$('category-select').value='all';collectionChanged=false;beginStudy();setView('learn');save();$('about-dialog').close();toast('All study progress and test records have been reset.');}));
   ['detail-dialog','about-dialog','submit-dialog'].forEach(id=>$(id).addEventListener('click',event=>{if(event.target!==$(id))return;const rect=$(id).getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)$(id).close();}));
