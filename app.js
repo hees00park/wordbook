@@ -6,6 +6,7 @@
   const dictionary = WordbookDictionary.create(DATA);
   let lookupRequest = 0, lookupController = null, lookupTrigger = null;
   const STORE_KEY = 'wordbook-progress-v2';
+  const VOICE_KEY = 'wordbook-voice-v1';
   const $ = id => document.getElementById(id);
   const icons = {
     cards:'<rect x="5" y="6" width="14" height="15" rx="2"/><path d="M8 3h9M9 11h6M9 15h4"/>',
@@ -260,8 +261,45 @@
   }
   function startTest() {if(!C.canQuiz(state,todayKey)){mode='unseen';category='all';$('category-select').value='all';beginStudy();setView('learn');return;}C.startQuiz(state,todayKey);save();renderTest(true);renderStats();}
   let speechRequest = 0;
+  let voiceStorageAvailable = true;
+  function loadVoicePreference() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(VOICE_KEY) || 'null');
+      if (saved && typeof saved.voiceURI === 'string' && saved.voiceURI.length <= 1024 && typeof saved.name === 'string' && saved.name.length <= 256 && typeof saved.lang === 'string' && /^en[-_]gb(?:[-_]|$)/i.test(saved.lang)) return {voiceURI:saved.voiceURI,name:saved.name,lang:saved.lang};
+    } catch { voiceStorageAvailable = false; }
+    return null;
+  }
+  let voicePreference = loadVoicePreference();
   function stopPronunciation() { speechRequest++; window.speechSynthesis?.cancel(); }
-  function britishVoice() { return window.speechSynthesis.getVoices().find(voice => /^en[-_]gb(?:[-_]|$)/i.test(voice.lang)) || null; }
+  const voiceKey = voice => JSON.stringify({voiceURI:voice.voiceURI || '',name:voice.name || '',lang:voice.lang || ''});
+  function britishVoices() {
+    const voices = window.speechSynthesis?.getVoices() || [];
+    return [...new Map(voices.filter(voice => /^en[-_]gb(?:[-_]|$)/i.test(voice.lang)).map(voice => [voiceKey(voice),voice])).values()];
+  }
+  function preferredVoice(voices) {
+    if (!voicePreference) return null;
+    return voices.find(voice => voicePreference.voiceURI && voice.voiceURI === voicePreference.voiceURI) || voices.find(voice => voice.name === voicePreference.name && voice.lang.toLowerCase().replace(/_/g,'-') === voicePreference.lang.toLowerCase().replace(/_/g,'-')) || null;
+  }
+  function britishVoice() { const voices = britishVoices(); return preferredVoice(voices) || voices[0] || null; }
+  function renderVoiceSettings() {
+    const supported = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+    const voices = supported ? britishVoices() : [],selected = preferredVoice(voices),select = $('voice-select');
+    select.replaceChildren();
+    const defaultOption = make('option','','Default British voice'); defaultOption.value = ''; select.append(defaultOption);
+    for (const voice of voices) { const option = make('option','',voice.name); option.value = voiceKey(voice); select.append(option); }
+    select.value = selected ? voiceKey(selected) : ''; select.disabled = !voices.length;
+    $('voice-preview').disabled = !voices.length;
+    $('voice-status').textContent = !supported ? 'Pronunciation is not supported in this browser.' : !voices.length ? 'No British voices are available to this browser. Check your device voice settings, then reopen this page.' : voicePreference && !selected ? `Your saved voice is unavailable. Using ${voices[0].name} for now.` : `Using ${selected?.name || voices[0].name}. ${voiceStorageAvailable ? 'Your choice is saved in this browser.' : 'Your choice applies to this visit.'}`;
+  }
+  function chooseVoice() {
+    stopPronunciation();
+    const value = $('voice-select').value,voice = britishVoices().find(item => voiceKey(item) === value);
+    if (value && !voice) { renderVoiceSettings(); return; }
+    voicePreference = voice ? {voiceURI:voice.voiceURI || '',name:voice.name || '',lang:voice.lang} : null;
+    try { localStorage.setItem(VOICE_KEY,JSON.stringify(voicePreference)); voiceStorageAvailable = true; }
+    catch { voiceStorageAvailable = false; toast('Voice selected for this visit. Browser storage is unavailable.'); }
+    renderVoiceSettings();
+  }
   function waitForBritishVoice() {
     const voice = britishVoice(); if (voice) return Promise.resolve(voice);
     return new Promise(resolve => {
@@ -274,21 +312,29 @@
       onChange();
     });
   }
-  async function speak() {
-    const word = currentWord(); if (!word) return;
+  async function playBritishText(text,isActive) {
     if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) { toast('Pronunciation is not supported in this browser.'); return; }
     const request = ++speechRequest;
     window.speechSynthesis.cancel();
     const voice = await waitForBritishVoice();
-    if (request !== speechRequest || word.id !== currentWord()?.id || view !== 'learn') return;
+    if (request !== speechRequest || !isActive()) return;
     if (!voice) { toast('An English (United Kingdom) voice is not available. Enable one in your browser or device settings.'); return; }
-    const utterance = new SpeechSynthesisUtterance(word.word);
+    const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'en-GB'; utterance.voice = voice; utterance.rate = .85;
     utterance.onerror = event => { if(!['canceled','interrupted'].includes(event.error))toast('Audio could not be played. Check your browser voice settings.'); };
     window.speechSynthesis.speak(utterance);
   }
+  function speak() {
+    const word = currentWord(); if (!word) return;
+    return playBritishText(word.word,() => word.id === currentWord()?.id && view === 'learn' && !$('about-dialog').open);
+  }
+  function previewVoice() { return playBritishText('The next train leaves at half past three.',() => $('about-dialog').open); }
   // Start loading device voices before the first pronunciation button press.
-  if ('speechSynthesis' in window) window.speechSynthesis.getVoices();
+  if ('speechSynthesis' in window) { window.speechSynthesis.getVoices(); window.speechSynthesis.addEventListener?.('voiceschanged',renderVoiceSettings); }
+  renderVoiceSettings();
+  $('voice-select').addEventListener('change',action(chooseVoice));
+  $('voice-preview').addEventListener('click',action(previewVoice));
+  ['close','cancel'].forEach(event => $('about-dialog').addEventListener(event,stopPronunciation));
   $('word-button').addEventListener('click',action(reveal));$('reveal-button').addEventListener('click',action(reveal));$('audio-button').addEventListener('click',action(speak));
   $('hide-meaning').addEventListener('click',action(() => {if(revealed)reveal();}));
   $('lookup-close').addEventListener('click',() => closeLookup(true));
@@ -302,12 +348,12 @@
   $('result-study').addEventListener('click',action(()=>{mode='today';category='all';$('category-select').value='all';beginStudy();setView('learn');}));
   $('quiz-answer').addEventListener('input',action(()=>{captureAnswer();renderQuizProgress();}));$('quiz-form').addEventListener('submit',action(e=>{e.preventDefault();nextQuestion(1);}));$('quiz-next').addEventListener('click',action(()=>nextQuestion(1)));$('quiz-previous').addEventListener('click',action(()=>nextQuestion(-1)));$('quiz-submit-top').addEventListener('click',action(requestSubmit));$('cancel-submit').addEventListener('click',()=>{$('submit-dialog').close();$('quiz-answer').focus();});$('confirm-submit').addEventListener('click',action(()=>{const result=C.submitQuiz(state,todayKey);if(!result)return;$('submit-dialog').close();save();renderTest();renderStats();$('result-title').setAttribute('tabindex','-1');$('result-title').focus({preventScroll:true});}));
   $('word-search').addEventListener('input',action(()=>renderCollection(true)));$('collection-filter').addEventListener('change',action(()=>renderCollection(true)));$('collection-kind').addEventListener('change',action(()=>renderCollection(true)));$('load-more').addEventListener('click',action(()=>{collectionLimit+=100;renderCollection();}));$('detail-close').addEventListener('click',()=>$('detail-dialog').close());$('detail-review').addEventListener('click',action(()=>{if(detailId)toggleReview(detailId);}));
-  function showAbout(){stopPronunciation();closeLookup();$('reset-confirm').hidden=true;$('reset-progress').hidden=false;$('about-dialog').showModal();}
-  $('about-button').addEventListener('click',showAbout);$('mobile-about').addEventListener('click',showAbout);$('about-close').addEventListener('click',()=>$('about-dialog').close());$('reset-progress').addEventListener('click',()=>{$('reset-confirm').hidden=false;$('reset-progress').hidden=true;});$('cancel-reset').addEventListener('click',()=>{$('reset-confirm').hidden=true;$('reset-progress').hidden=false;});
+  function showAbout(){stopPronunciation();closeLookup();renderVoiceSettings();$('reset-confirm').hidden=true;$('reset-progress').hidden=false;$('about-dialog').showModal();}
+  $('about-button').addEventListener('click',showAbout);$('mobile-about').addEventListener('click',showAbout);$('about-close').addEventListener('click',()=>{stopPronunciation();$('about-dialog').close();});$('reset-progress').addEventListener('click',()=>{$('reset-confirm').hidden=false;$('reset-progress').hidden=true;});$('cancel-reset').addEventListener('click',()=>{$('reset-confirm').hidden=true;$('reset-progress').hidden=false;});
   $('confirm-reset').addEventListener('click',action(()=>{state=C.emptyState();today=C.day(state,todayKey);mode='today';category='all';$('category-select').value='all';collectionChanged=false;beginStudy();setView('learn');save();$('about-dialog').close();toast('All study progress and test records have been reset.');}));
   ['detail-dialog','about-dialog','submit-dialog'].forEach(id=>$(id).addEventListener('click',event=>{if(event.target!==$(id))return;const rect=$(id).getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)$(id).close();}));
   ['prev','next'].forEach(direction=>$(`calendar-${direction}`).addEventListener('click',action(()=>{const[y,m]=calendarMonth.split('-').map(Number),date=new Date(Date.UTC(y,m-1+(direction==='prev'?-1:1),1));calendarMonth=`${date.getUTCFullYear()}-${String(date.getUTCMonth()+1).padStart(2,'0')}`;renderCalendar();})));
   document.addEventListener('keydown',event=>{if(ensureToday()||view!=='learn'||['detail-dialog','about-dialog','submit-dialog'].some(id=>$(id).open)||event.ctrlKey||event.metaKey||event.altKey||event.repeat)return;if(event.target?.closest('input, select, textarea, [contenteditable="true"]'))return;if(event.code==='Space'){if(event.target?.closest('button, a'))return;event.preventDefault();reveal();}else if(event.key==='1'){event.preventDefault();rate('review');}else if(event.key==='2'){event.preventDefault();rate('known');}else if(event.key==='ArrowLeft'){event.preventDefault();move(-1);}else if(event.key==='ArrowRight'){event.preventDefault();move(1);}});
-  window.addEventListener('focus',ensureToday);setInterval(ensureToday,60000);
+  window.addEventListener('focus',() => {ensureToday();renderVoiceSettings();});setInterval(ensureToday,60000);
   beginStudy({resume:true});setView('learn');save();
 })();
