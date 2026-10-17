@@ -40,7 +40,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a005",
     "word": "acknowledge",
     "pos": "v.",
-    "meaning": "(한계·사실을) 솔직히 인정하다",
+    "meaning": "인정하다",
     "example": "The authors acknowledge that their sample may not represent the entire population.",
     "category": "Academic",
     "level": "C1"
@@ -49,7 +49,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a006",
     "word": "acquisition",
     "pos": "n.",
-    "meaning": "기업 인수",
+    "meaning": "인수; 취득",
     "example": "The acquisition gave the company access to an established distribution network.",
     "category": "Business",
     "level": "C1"
@@ -166,7 +166,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a019",
     "word": "assess",
     "pos": "v.",
-    "meaning": "(가치·실현 가능성을) 따져 평가하다",
+    "meaning": "평가하다",
     "example": "Independent auditors will assess whether the proposed investment is financially viable.",
     "category": "Business",
     "level": "C1"
@@ -184,7 +184,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a021",
     "word": "authentic",
     "pos": "adj.",
-    "meaning": "진정성 있는",
+    "meaning": "진정한; 진짜의",
     "example": "Her apology felt authentic because she accepted responsibility without making excuses.",
     "category": "General",
     "level": "C1"
@@ -238,7 +238,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a027",
     "word": "bureaucracy",
     "pos": "n.",
-    "meaning": "관료주의; 복잡한 행정 절차",
+    "meaning": "관료주의",
     "example": "Excessive bureaucracy delayed the opening of several urgently needed community clinics.",
     "category": "Society",
     "level": "C1"
@@ -256,7 +256,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a029",
     "word": "catalyst",
     "pos": "n.",
-    "meaning": "촉매; 변화를 촉진하는 계기",
+    "meaning": "촉매; 계기",
     "example": "The discovery became a catalyst for further research into alternative materials.",
     "category": "Academic",
     "level": "C1"
@@ -265,7 +265,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a030",
     "word": "coherent",
     "pos": "adj.",
-    "meaning": "논리적으로 일관된",
+    "meaning": "일관된; 조리 있는",
     "example": "Your argument needs a coherent structure that connects evidence with conclusions.",
     "category": "Academic",
     "level": "C1"
@@ -346,7 +346,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a039",
     "word": "concede",
     "pos": "v.",
-    "meaning": "(논쟁 끝에) 마지못해 인정하다",
+    "meaning": "인정하다; 양보하다",
     "example": "After examining the figures, he had to concede that demand was weakening.",
     "category": "Business",
     "level": "C1"
@@ -355,7 +355,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a040",
     "word": "conceive",
     "pos": "v.",
-    "meaning": "(새로운 해결책을) 머릿속으로 구상하다",
+    "meaning": "구상하다",
     "example": "It is difficult to conceive a solution that satisfies every competing interest.",
     "category": "General",
     "level": "C1"
@@ -391,7 +391,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a044",
     "word": "contingency",
     "pos": "n.",
-    "meaning": "비상사태 대비책",
+    "meaning": "만일의 사태",
     "example": "The contingency plan provides temporary housing if severe flooding forces evacuations.",
     "category": "Society",
     "level": "C1"
@@ -400,7 +400,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a045",
     "word": "contradict",
     "pos": "v.",
-    "meaning": "모순되다",
+    "meaning": "모순되다; 반박하다",
     "example": "These recent observations contradict the assumptions underlying the original scientific model.",
     "category": "Academic",
     "level": "C1"
@@ -463,7 +463,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a052",
     "word": "crucial",
     "pos": "adj.",
-    "meaning": "결정적으로 중요한",
+    "meaning": "매우 중요한",
     "example": "Reliable cash flow is crucial for a small business entering new markets.",
     "category": "Business",
     "level": "C1"
@@ -481,7 +481,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a054",
     "word": "curb",
     "pos": "v.",
-    "meaning": "(혼잡·증가세를) 억제하다",
+    "meaning": "억제하다",
     "example": "The city introduced parking restrictions to curb congestion around the station.",
     "category": "Society",
     "level": "C1"
@@ -544,7 +544,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a061",
     "word": "deteriorate",
     "pos": "v.",
-    "meaning": "(관계·상태가) 점점 나빠지다",
+    "meaning": "악화되다",
     "example": "Their relationship began to deteriorate after months of unresolved disagreement.",
     "category": "General",
     "level": "C1"
@@ -562,7 +562,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a063",
     "word": "differentiate",
     "pos": "v.",
-    "meaning": "차별화하다",
+    "meaning": "구별하다; 차별화하다",
     "example": "The brand hopes to differentiate its products through durability and repair services.",
     "category": "Business",
     "level": "C1"
@@ -634,7 +634,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a071",
     "word": "aberration",
     "pos": "n.",
-    "meaning": "이례적인 일탈",
+    "meaning": "일탈; 이례적인 일",
     "example": "The sudden sales decline proved an aberration within an otherwise stable year.",
     "category": "Business",
     "level": "C2"
@@ -652,7 +652,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a073",
     "word": "abrogate",
     "pos": "v.",
-    "meaning": "폐지하다; 공식적으로 철회하다",
+    "meaning": "폐지하다; 철회하다",
     "example": "Parliament voted to abrogate the outdated law after years of public criticism.",
     "category": "Society",
     "level": "C2"
@@ -679,7 +679,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a076",
     "word": "acerbic",
     "pos": "adj.",
-    "meaning": "(말투가) 날카롭고 빈정대는",
+    "meaning": "신랄한",
     "example": "His acerbic comments made an already uncomfortable family conversation considerably worse.",
     "category": "General",
     "level": "C2"
@@ -706,7 +706,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a079",
     "word": "adroit",
     "pos": "adj.",
-    "meaning": "까다로운 상황을 재치 있고 능숙하게 다루는",
+    "meaning": "능숙한; 기민한",
     "example": "Her adroit handling of the awkward question quickly restored a relaxed atmosphere.",
     "category": "General",
     "level": "C2"
@@ -724,7 +724,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a081",
     "word": "acumen",
     "pos": "n.",
-    "meaning": "뛰어난 판단력",
+    "meaning": "통찰력; 판단력",
     "example": "Her financial acumen helped the struggling company avoid another costly acquisition.",
     "category": "Business",
     "level": "C2"
@@ -733,7 +733,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a082",
     "word": "aggrieved",
     "pos": "adj.",
-    "meaning": "부당한 대우에 분개하는",
+    "meaning": "분개한",
     "example": "Residents felt aggrieved when their repeated complaints received no official response.",
     "category": "Society",
     "level": "C2"
@@ -742,7 +742,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a083",
     "word": "alacrity",
     "pos": "n.",
-    "meaning": "기꺼이 신속하게 하는 태도",
+    "meaning": "민첩함; 적극성",
     "example": "She accepted the unexpected invitation with an alacrity that surprised her friends.",
     "category": "General",
     "level": "C2"
@@ -751,7 +751,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a084",
     "word": "anathema",
     "pos": "n.",
-    "meaning": "극도로 싫어하는 것",
+    "meaning": "혐오의 대상",
     "example": "For this researcher, suppressing inconvenient evidence is anathema to scientific inquiry.",
     "category": "Academic",
     "level": "C2"
@@ -769,7 +769,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a086",
     "word": "ambivalent",
     "pos": "adj.",
-    "meaning": "양가감정이 드는",
+    "meaning": "상반된 감정을 느끼는",
     "example": "She remained ambivalent about moving abroad despite the attractive job offer.",
     "category": "General",
     "level": "C2"
@@ -787,7 +787,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a088",
     "word": "anachronism",
     "pos": "n.",
-    "meaning": "시대착오적인 것",
+    "meaning": "시대착오",
     "example": "The mandatory paper form feels like an anachronism in an otherwise digital process.",
     "category": "Business",
     "level": "C2"
@@ -805,7 +805,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a090",
     "word": "animosity",
     "pos": "n.",
-    "meaning": "(분쟁으로 쌓인) 강한 반감",
+    "meaning": "적대감",
     "example": "Years of unresolved disputes created lasting animosity between the neighboring communities.",
     "category": "Society",
     "level": "C2"
@@ -850,7 +850,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a095",
     "word": "appease",
     "pos": "v.",
-    "meaning": "(요구를 일부 들어주어) 불만을 달래다",
+    "meaning": "달래다; 회유하다",
     "example": "The company offered partial refunds to appease customers angered by repeated delays.",
     "category": "Business",
     "level": "C2"
@@ -859,7 +859,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a096",
     "word": "astute",
     "pos": "adj.",
-    "meaning": "(관찰·판단이) 미묘한 점을 꿰뚫는",
+    "meaning": "기민한; 영리한",
     "example": "An astute observer noticed that the apparent improvement concealed growing regional inequality.",
     "category": "Academic",
     "level": "C2"
@@ -877,7 +877,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a098",
     "word": "assiduous",
     "pos": "adj.",
-    "meaning": "(연구·작업에) 부지런하고 꾸준히 공들이는",
+    "meaning": "근면한; 성실한",
     "example": "Her assiduous research uncovered several inconsistencies that earlier investigations had overlooked.",
     "category": "Academic",
     "level": "C2"
@@ -895,7 +895,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a100",
     "word": "austerity",
     "pos": "n.",
-    "meaning": "긴축 재정",
+    "meaning": "긴축 정책",
     "example": "Years of austerity reduced the resources available to public libraries and schools.",
     "category": "Society",
     "level": "C2"
@@ -904,7 +904,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a101",
     "word": "aversion",
     "pos": "n.",
-    "meaning": "강한 기피",
+    "meaning": "혐오; 반감",
     "example": "His aversion to uncertainty made even a minor change of plans stressful.",
     "category": "General",
     "level": "C2"
@@ -913,7 +913,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a102",
     "word": "belligerent",
     "pos": "adj.",
-    "meaning": "공격적인; 싸우려 드는",
+    "meaning": "호전적인",
     "example": "The passenger became increasingly belligerent when staff refused his unreasonable demands.",
     "category": "General",
     "level": "C2"
@@ -931,7 +931,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a104",
     "word": "bereft",
     "pos": "adj.",
-    "meaning": "상실감에 사로잡힌",
+    "meaning": "상실감에 잠긴",
     "example": "She felt bereft when the close friend she relied on moved away.",
     "category": "General",
     "level": "C2"
@@ -985,7 +985,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a110",
     "word": "capricious",
     "pos": "adj.",
-    "meaning": "(날씨 등이) 종잡을 수 없이 변하는",
+    "meaning": "변덕스러운",
     "example": "The capricious weather forced us to change our hiking plans several times.",
     "category": "General",
     "level": "C2"
@@ -994,7 +994,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a111",
     "word": "capitulate",
     "pos": "v.",
-    "meaning": "(요구·압력에) 항복하다",
+    "meaning": "항복하다",
     "example": "The union refused to capitulate despite mounting pressure to abandon its demands.",
     "category": "Society",
     "level": "C2"
@@ -1003,7 +1003,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a112",
     "word": "catharsis",
     "pos": "n.",
-    "meaning": "감정의 정화; 후련함",
+    "meaning": "감정의 정화",
     "example": "Writing honestly about the experience provided a catharsis she had not anticipated.",
     "category": "General",
     "level": "C2"
@@ -1012,7 +1012,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a113",
     "word": "circumspect",
     "pos": "adj.",
-    "meaning": "(판단·발언에) 경솔하지 않고 조심스러운",
+    "meaning": "신중한",
     "example": "The researcher remained circumspect about drawing firm conclusions from such limited evidence.",
     "category": "Academic",
     "level": "C2"
@@ -1021,7 +1021,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a114",
     "word": "clandestine",
     "pos": "adj.",
-    "meaning": "비밀리에 이루어지는",
+    "meaning": "은밀한",
     "example": "The investigation uncovered clandestine meetings between company executives and senior officials.",
     "category": "Society",
     "level": "C2"
@@ -1057,7 +1057,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a118",
     "word": "conciliatory",
     "pos": "adj.",
-    "meaning": "화해를 추구하는",
+    "meaning": "화해하려는",
     "example": "Her conciliatory tone helped both sides return to a more productive discussion.",
     "category": "General",
     "level": "C2"
@@ -1066,7 +1066,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a119",
     "word": "confluence",
     "pos": "n.",
-    "meaning": "융합; 여러 요인의 동시 작용",
+    "meaning": "합류; 결합",
     "example": "A confluence of technological advances and falling costs made the experiment feasible.",
     "category": "Academic",
     "level": "C2"
@@ -1102,7 +1102,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a123",
     "word": "culpable",
     "pos": "adj.",
-    "meaning": "책임이 있는; 비난받아 마땅한",
+    "meaning": "책임이 있는",
     "example": "The inquiry found senior managers culpable for ignoring repeated warnings about safety.",
     "category": "Business",
     "level": "C2"
@@ -1111,7 +1111,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a124",
     "word": "debilitate",
     "pos": "v.",
-    "meaning": "심하게 쇠약하게 하다",
+    "meaning": "쇠약하게 하다",
     "example": "A prolonged illness can debilitate even someone who was previously physically fit.",
     "category": "General",
     "level": "C2"
@@ -1120,7 +1120,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a125",
     "word": "decorum",
     "pos": "n.",
-    "meaning": "예의 바른 처신",
+    "meaning": "예의범절",
     "example": "The chair reminded all participants to maintain decorum during the heated debate.",
     "category": "Society",
     "level": "C2"
@@ -1129,7 +1129,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a126",
     "word": "deference",
     "pos": "n.",
-    "meaning": "존중하여 따르는 태도",
+    "meaning": "존중; 경의",
     "example": "She declined to question the decision out of deference to her supervisor.",
     "category": "Business",
     "level": "C2"
@@ -1138,7 +1138,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a127",
     "word": "delineate",
     "pos": "v.",
-    "meaning": "명확하게 기술하다",
+    "meaning": "윤곽을 그리다; 명시하다",
     "example": "The opening chapter will delineate the assumptions that guide the subsequent analysis.",
     "category": "Academic",
     "level": "C2"
@@ -1201,7 +1201,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a134",
     "word": "disingenuous",
     "pos": "adj.",
-    "meaning": "솔직하지 못한; 의뭉스러운",
+    "meaning": "진실하지 못한",
     "example": "His disingenuous claim of complete ignorance conflicted with the emails he had sent.",
     "category": "Business",
     "level": "C2"
@@ -1255,7 +1255,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a140",
     "word": "apparent",
     "pos": "adj.",
-    "meaning": "분명히 드러나는",
+    "meaning": "명백한",
     "example": "It soon became apparent that we had taken the wrong turning.",
     "category": "General",
     "level": "B2"
@@ -1327,7 +1327,7 @@ globalThis.WORD_CHUNKS.a = [
     "id": "a148",
     "word": "challenge",
     "pos": "n.",
-    "meaning": "어려운 과제",
+    "meaning": "도전; 난제",
     "example": "Finding affordable housing remains a challenge for many students in the city.",
     "category": "Society",
     "level": "B1"

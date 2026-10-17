@@ -40,7 +40,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c005",
     "word": "methodical",
     "pos": "adj.",
-    "meaning": "(개인의 작업 방식이) 꼼꼼하고 순서 정연한",
+    "meaning": "체계적인; 꼼꼼한",
     "example": "His methodical approach made even the most complicated household repairs manageable.",
     "category": "General",
     "level": "C1"
@@ -67,7 +67,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c008",
     "word": "misconception",
     "pos": "n.",
-    "meaning": "잘못된 생각",
+    "meaning": "오해",
     "example": "The study challenges the misconception that greater spending always improves education.",
     "category": "Academic",
     "level": "C1"
@@ -112,7 +112,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c013",
     "word": "momentum",
     "pos": "n.",
-    "meaning": "(활동이 이어지며 붙는) 추진 탄력",
+    "meaning": "추진력; 탄력",
     "example": "Our campaign gained momentum after several respected local leaders offered support.",
     "category": "Society",
     "level": "C1"
@@ -193,7 +193,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c022",
     "word": "nurture",
     "pos": "v.",
-    "meaning": "(호기심·재능을) 보살펴 기르다",
+    "meaning": "기르다; 양육하다",
     "example": "Good teachers nurture curiosity by encouraging students to ask difficult questions.",
     "category": "General",
     "level": "C1"
@@ -211,7 +211,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c024",
     "word": "oppress",
     "pos": "v.",
-    "meaning": "(집단을) 부당하게 억누르고 박해하다",
+    "meaning": "억압하다",
     "example": "Authorities used restrictive laws to oppress communities demanding equal political rights.",
     "category": "Society",
     "level": "C1"
@@ -274,7 +274,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c031",
     "word": "orientation",
     "pos": "n.",
-    "meaning": "적응 교육",
+    "meaning": "방향; 적응 교육",
     "example": "Every new employee attends an orientation covering workplace procedures and available support.",
     "category": "Business",
     "level": "C1"
@@ -337,7 +337,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c038",
     "word": "persistent",
     "pos": "adj.",
-    "meaning": "(노력·행동이) 끈기 있게 계속되는",
+    "meaning": "끈질긴; 지속적인",
     "example": "Her persistent efforts eventually persuaded the landlord to repair the broken heating.",
     "category": "General",
     "level": "C1"
@@ -373,7 +373,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c042",
     "word": "preliminary",
     "pos": "adj.",
-    "meaning": "예비의",
+    "meaning": "예비의; 잠정적인",
     "example": "The team shared preliminary results while additional experiments were still underway.",
     "category": "Academic",
     "level": "C1"
@@ -400,7 +400,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c045",
     "word": "presume",
     "pos": "v.",
-    "meaning": "(충분한 확인 없이) 사실로 여기다",
+    "meaning": "추정하다; 간주하다",
     "example": "We should not presume that silence always indicates agreement with our plans.",
     "category": "General",
     "level": "C1"
@@ -463,7 +463,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c052",
     "word": "prominent",
     "pos": "adj.",
-    "meaning": "널리 알려져 사회적으로 두드러지는",
+    "meaning": "저명한; 두드러진",
     "example": "Several prominent economists publicly questioned the assumptions behind the government's new policy.",
     "category": "Society",
     "level": "C1"
@@ -499,7 +499,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c056",
     "word": "purported",
     "pos": "adj.",
-    "meaning": "사실이라고 주장되는",
+    "meaning": "사실이라 주장되는",
     "example": "The consultant's purported expertise failed to withstand even a basic technical discussion.",
     "category": "Business",
     "level": "C1"
@@ -571,7 +571,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c064",
     "word": "reinforce",
     "pos": "v.",
-    "meaning": "반복이나 보강을 통해 기억이나 효과를 더 확고하게 하다",
+    "meaning": "강화하다; 보강하다",
     "example": "Regular practice helps reinforce the vocabulary you encounter while reading English novels.",
     "category": "General",
     "level": "C1"
@@ -616,7 +616,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c069",
     "word": "rigorous",
     "pos": "adj.",
-    "meaning": "(검증·평가가) 철저하고 정밀한",
+    "meaning": "엄격한; 철저한",
     "example": "The journal requires rigorous evaluation of every claim before accepting a manuscript.",
     "category": "Academic",
     "level": "C1"
@@ -643,7 +643,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c072",
     "word": "malleable",
     "pos": "adj.",
-    "meaning": "쉽게 성형되는",
+    "meaning": "변형하기 쉬운; 유연한",
     "example": "The material becomes malleable when heated, allowing researchers to reshape it precisely.",
     "category": "Academic",
     "level": "C2"
@@ -670,7 +670,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c075",
     "word": "meander",
     "pos": "v.",
-    "meaning": "두서없이 이어지다",
+    "meaning": "굽이치다; 두서없이 말하다",
     "example": "Our late-night conversations often meander from childhood memories to impossible future plans.",
     "category": "General",
     "level": "C2"
@@ -679,7 +679,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c076",
     "word": "mendacious",
     "pos": "adj.",
-    "meaning": "거짓말을 하는",
+    "meaning": "거짓말하는",
     "example": "The witness proved mendacious, repeatedly changing his account when new evidence emerged.",
     "category": "Society",
     "level": "C2"
@@ -688,7 +688,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c077",
     "word": "mercurial",
     "pos": "adj.",
-    "meaning": "(사람의 기분·태도가) 급변하는",
+    "meaning": "변덕스러운",
     "example": "The mercurial director might approve a proposal and reject it moments later.",
     "category": "Business",
     "level": "C2"
@@ -715,7 +715,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c080",
     "word": "myopic",
     "pos": "adj.",
-    "meaning": "당장의 이익에만 매달려 장기적 결과를 못 보는",
+    "meaning": "근시안적인",
     "example": "The company's myopic focus on quarterly profits undermined its long-term research strategy.",
     "category": "Business",
     "level": "C2"
@@ -733,7 +733,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c082",
     "word": "nebulous",
     "pos": "adj.",
-    "meaning": "(계획·생각이) 윤곽이 불분명한",
+    "meaning": "모호한",
     "example": "His nebulous travel plans involved several countries but no actual reservations.",
     "category": "General",
     "level": "C2"
@@ -742,7 +742,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c083",
     "word": "negligible",
     "pos": "adj.",
-    "meaning": "무시해도 될 만큼 작은",
+    "meaning": "무시할 만한",
     "example": "The additional cost was negligible compared with the project's expected annual savings.",
     "category": "Business",
     "level": "C2"
@@ -769,7 +769,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c086",
     "word": "nuanced",
     "pos": "adj.",
-    "meaning": "미묘한 차이를 고려한",
+    "meaning": "미묘한 차이를 살린",
     "example": "The article offers a nuanced account of how neighborhood identities change over time.",
     "category": "Academic",
     "level": "C2"
@@ -778,7 +778,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c087",
     "word": "obdurate",
     "pos": "adj.",
-    "meaning": "(반대·설득에도) 입장을 굽히지 않는",
+    "meaning": "완고한",
     "example": "The mayor remained obdurate despite months of protests against the proposed closures.",
     "category": "Society",
     "level": "C2"
@@ -814,7 +814,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c091",
     "word": "onerous",
     "pos": "adj.",
-    "meaning": "부담이 큰",
+    "meaning": "부담스러운",
     "example": "Small firms struggle with onerous reporting requirements that consume scarce administrative resources.",
     "category": "Business",
     "level": "C2"
@@ -877,7 +877,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c098",
     "word": "parsimonious",
     "pos": "adj.",
-    "meaning": "(모형이) 최소한의 가정으로 설명하는",
+    "meaning": "인색한; 간결한",
     "example": "The researchers favored a parsimonious model that explained the data with fewer assumptions.",
     "category": "Academic",
     "level": "C2"
@@ -913,7 +913,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c102",
     "word": "pertinent",
     "pos": "adj.",
-    "meaning": "(논점에) 정확히 들어맞는",
+    "meaning": "관련된; 적절한",
     "example": "Please include only evidence pertinent to the specific research question being investigated.",
     "category": "Academic",
     "level": "C2"
@@ -922,7 +922,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c103",
     "word": "placate",
     "pos": "v.",
-    "meaning": "(화를 누그러뜨리도록) 상대를 달래다",
+    "meaning": "달래다",
     "example": "She offered to cook his favorite meal to placate him after their argument.",
     "category": "General",
     "level": "C2"
@@ -931,7 +931,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c104",
     "word": "poignant",
     "pos": "adj.",
-    "meaning": "애틋한 슬픔을 자아내는",
+    "meaning": "가슴 아픈; 애틋한",
     "example": "The old photograph offered a poignant reminder of summers with my grandparents.",
     "category": "General",
     "level": "C2"
@@ -949,7 +949,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c106",
     "word": "pragmatic",
     "pos": "adj.",
-    "meaning": "이론보다 현실적인 제약과 효과를 우선하는",
+    "meaning": "실용적인; 현실적인",
     "example": "The team adopted a pragmatic solution that balanced limited funding with immediate needs.",
     "category": "Business",
     "level": "C2"
@@ -976,7 +976,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c109",
     "word": "preposterous",
     "pos": "adj.",
-    "meaning": "(생각·주장이) 상식에 어긋나 터무니없는",
+    "meaning": "터무니없는",
     "example": "The idea that everyone should finish this task tonight is simply preposterous.",
     "category": "General",
     "level": "C2"
@@ -1021,7 +1021,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c114",
     "word": "prudent",
     "pos": "adj.",
-    "meaning": "(미래 위험에 대비해) 분별 있고 신중한",
+    "meaning": "신중한; 분별 있는",
     "example": "Keeping some cash in reserve is prudent when future expenses remain uncertain.",
     "category": "General",
     "level": "C2"
@@ -1030,7 +1030,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c115",
     "word": "punitive",
     "pos": "adj.",
-    "meaning": "처벌적인",
+    "meaning": "징벌적인",
     "example": "Critics argued that punitive school policies disproportionately affected students from poorer families.",
     "category": "Society",
     "level": "C2"
@@ -1057,7 +1057,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c118",
     "word": "quell",
     "pos": "v.",
-    "meaning": "(소문·불안을) 잠재우다",
+    "meaning": "잠재우다; 진압하다",
     "example": "The chief executive released audited figures to quell rumors about the company's finances.",
     "category": "Business",
     "level": "C2"
@@ -1066,7 +1066,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c119",
     "word": "quintessential",
     "pos": "adj.",
-    "meaning": "어떤 대상의 본질적인 특징을 가장 완벽하게 보여 주는",
+    "meaning": "전형적인",
     "example": "The quiet cottage became our quintessential image of a peaceful countryside retreat.",
     "category": "General",
     "level": "C2"
@@ -1084,7 +1084,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c121",
     "word": "recalcitrant",
     "pos": "adj.",
-    "meaning": "협조를 거부하는",
+    "meaning": "반항적인; 비협조적인",
     "example": "The mediator struggled to reach an agreement with the recalcitrant negotiating team.",
     "category": "Business",
     "level": "C2"
@@ -1093,7 +1093,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c122",
     "word": "recourse",
     "pos": "n.",
-    "meaning": "의지할 수 있는 수단",
+    "meaning": "의지할 수단",
     "example": "Without a written contract, the tenant had little recourse when repairs were refused.",
     "category": "Society",
     "level": "C2"
@@ -1120,7 +1120,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c125",
     "word": "relegate",
     "pos": "v.",
-    "meaning": "덜 중요한 위치로 밀어내다",
+    "meaning": "격하시키다",
     "example": "Managers should not relegate customer feedback to a minor section of the report.",
     "category": "Business",
     "level": "C2"
@@ -1174,7 +1174,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c131",
     "word": "reticent",
     "pos": "adj.",
-    "meaning": "속마음을 잘 드러내지 않는",
+    "meaning": "말이 적은; 과묵한",
     "example": "Usually reticent about personal matters, he surprised us by describing his difficult childhood.",
     "category": "General",
     "level": "C2"
@@ -1183,7 +1183,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c132",
     "word": "reverberate",
     "pos": "v.",
-    "meaning": "계속 영향을 미치다",
+    "meaning": "울려 퍼지다; 여파가 이어지다",
     "example": "The effects of the banking crisis continue to reverberate throughout the global economy.",
     "category": "Business",
     "level": "C2"
@@ -1219,7 +1219,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c136",
     "word": "maintain",
     "pos": "v.",
-    "meaning": "(상태·수준을) 일정하게 유지하다",
+    "meaning": "유지하다",
     "example": "Regular exercise helps me maintain enough energy for a busy working week.",
     "category": "General",
     "level": "B2"
@@ -1273,7 +1273,7 @@ globalThis.WORD_CHUNKS.c = [
     "id": "c142",
     "word": "relevant",
     "pos": "adj.",
-    "meaning": "(목적·상황과) 관련이 있는",
+    "meaning": "관련 있는",
     "example": "Please attach any documents relevant to your application for the research position.",
     "category": "Academic",
     "level": "B2"

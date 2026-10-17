@@ -20,7 +20,19 @@
     const uniqueIds=value=>Array.isArray(value)?[...new Set(value.filter(id=>typeof id==='string'&&words.has(id)))]:[];
     const isExpression=id=>['idiom','phrasal'].includes(words.get(id).kind);
     function cleanAnswers(raw,allowed){const answers=dictionary();if(record(raw))for(const id of allowed)if(typeof raw[id]==='string')answers[id]=raw[id].slice(0,512);return answers;}
-    function grade(quiz){quiz.correctIds=quiz.ids.filter(id=>[words.get(id).word,...(Array.isArray(words.get(id).aliases)?words.get(id).aliases:[])].some(answer=>normalize(quiz.answers[id])!==''&&normalize(quiz.answers[id])===normalize(answer)));quiz.score=quiz.correctIds.length;quiz.passed=quiz.score>=PASS_COUNT;return quiz;}
+    function grade(quiz){
+      const accepted=new Map(),promptKeys=new Map();
+      for(const id of quiz.ids){
+        const word=words.get(id),meaning=normalize(word.meaning);
+        // Identical prompts cannot distinguish synonyms; accept those in this test.
+        // Missing meanings remain separate so unrelated entries never share answers.
+        const key=meaning?'prompt:'+JSON.stringify([normalize(word.pos),meaning]):'id:'+id;
+        promptKeys.set(id,key);if(!accepted.has(key))accepted.set(key,new Set());
+        for(const answer of[word.word,...(Array.isArray(word.aliases)?word.aliases:[])]){const value=normalize(answer);if(value)accepted.get(key).add(value);}
+      }
+      quiz.correctIds=quiz.ids.filter(id=>{const answer=normalize(quiz.answers[id]);return answer!==''&&accepted.get(promptKeys.get(id)).has(answer);});
+      quiz.score=quiz.correctIds.length;quiz.passed=quiz.score>=PASS_COUNT;return quiz;
+    }
     function cleanQuiz(raw,allowed,forceSubmitted=false){
       if(!record(raw)||!Array.isArray(raw.ids)||raw.ids.length!==QUIZ_SIZE)return null;
       const selected=uniqueIds(raw.ids);if(selected.length!==QUIZ_SIZE||!selected.every(id=>allowed.has(id)))return null;

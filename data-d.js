@@ -49,7 +49,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d006",
     "word": "solitary",
     "pos": "adj.",
-    "meaning": "혼자 하는",
+    "meaning": "혼자의; 혼자 하는",
     "example": "She enjoys a solitary walk along the river before breakfast.",
     "category": "General",
     "level": "C1"
@@ -103,7 +103,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d012",
     "word": "stimulus",
     "pos": "n.",
-    "meaning": "경기 부양책",
+    "meaning": "자극; 경기 부양책",
     "example": "The government announced a stimulus to support employment during the recession.",
     "category": "Society",
     "level": "C1"
@@ -184,7 +184,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d021",
     "word": "suppress",
     "pos": "v.",
-    "meaning": "(시위·활동을) 강제로 진압하다",
+    "meaning": "억누르다; 진압하다",
     "example": "Authorities attempted to suppress peaceful protests by restricting access to public squares.",
     "category": "Society",
     "level": "C1"
@@ -202,7 +202,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d023",
     "word": "susceptible",
     "pos": "adj.",
-    "meaning": "(특정 영향에) 쉽게 빠지거나 영향을 받는",
+    "meaning": "영향받기 쉬운",
     "example": "People living alone can be especially susceptible to isolation after retirement.",
     "category": "Society",
     "level": "C1"
@@ -220,7 +220,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d025",
     "word": "systematic",
     "pos": "adj.",
-    "meaning": "(조사·검토가) 정해진 체계에 따른",
+    "meaning": "체계적인",
     "example": "A systematic review helps identify patterns across studies with different research designs.",
     "category": "Academic",
     "level": "C1"
@@ -256,7 +256,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d029",
     "word": "threshold",
     "pos": "n.",
-    "meaning": "문턱값",
+    "meaning": "문턱; 임계값",
     "example": "Measurements below this threshold are difficult to distinguish from background noise.",
     "category": "Academic",
     "level": "C1"
@@ -265,7 +265,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d030",
     "word": "thrive",
     "pos": "v.",
-    "meaning": "잘 자라다",
+    "meaning": "번창하다; 잘 자라다",
     "example": "These plants thrive in bright rooms with consistent temperatures and moderate humidity.",
     "category": "General",
     "level": "C1"
@@ -274,7 +274,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d031",
     "word": "tolerance",
     "pos": "n.",
-    "meaning": "허용 오차",
+    "meaning": "관용; 허용 오차",
     "example": "Engineers specified a tolerance of two millimeters for every manufactured component.",
     "category": "Academic",
     "level": "C1"
@@ -328,7 +328,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d037",
     "word": "turbulent",
     "pos": "adj.",
-    "meaning": "거센",
+    "meaning": "격동의; 거센",
     "example": "The captain slowed the boat as we entered the turbulent water.",
     "category": "General",
     "level": "C1"
@@ -346,7 +346,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d039",
     "word": "underlying",
     "pos": "adj.",
-    "meaning": "(현상의) 밑바탕에 있는",
+    "meaning": "근본적인; 기저의",
     "example": "The study examines the underlying mechanisms connecting sleep quality and memory formation.",
     "category": "Academic",
     "level": "C1"
@@ -427,7 +427,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d048",
     "word": "vigilant",
     "pos": "adj.",
-    "meaning": "(위험을 놓치지 않게) 주의를 늦추지 않는",
+    "meaning": "경계하는; 방심하지 않는",
     "example": "Remain vigilant when crossing unfamiliar roads, especially after dark or heavy rain.",
     "category": "General",
     "level": "C1"
@@ -436,7 +436,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d049",
     "word": "vulnerable",
     "pos": "adj.",
-    "meaning": "(피해를 입기 쉬워) 보호가 필요한",
+    "meaning": "취약한",
     "example": "The policy provides additional support for vulnerable families facing sudden financial hardship.",
     "category": "Society",
     "level": "C1"
@@ -526,7 +526,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d059",
     "word": "sustain",
     "pos": "v.",
-    "meaning": "(활동·집중을) 오래 지속하다",
+    "meaning": "지속하다; 유지하다",
     "example": "Regular breaks help me sustain concentration during long sessions of careful reading.",
     "category": "General",
     "level": "C1"
@@ -535,7 +535,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d060",
     "word": "transformation",
     "pos": "n.",
-    "meaning": "전환",
+    "meaning": "전환; 변형",
     "example": "The company's digital transformation changed how employees collaborate across its international offices.",
     "category": "Business",
     "level": "C1"
@@ -544,7 +544,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d061",
     "word": "sanction",
     "pos": "v.",
-    "meaning": "제재를 가하다",
+    "meaning": "제재하다",
     "example": "Regulators can sanction companies that repeatedly violate consumer protection rules.",
     "category": "Society",
     "level": "C1"
@@ -562,7 +562,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d063",
     "word": "sentiment",
     "pos": "n.",
-    "meaning": "정서",
+    "meaning": "정서; 감정",
     "example": "Public sentiment shifted after journalists revealed the true cost of the development.",
     "category": "Society",
     "level": "C1"
@@ -580,7 +580,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d065",
     "word": "specification",
     "pos": "n.",
-    "meaning": "규격",
+    "meaning": "규격; 명세",
     "example": "Each component must satisfy the specification provided in the technical documentation.",
     "category": "Academic",
     "level": "C1"
@@ -625,7 +625,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d070",
     "word": "transmission",
     "pos": "n.",
-    "meaning": "전달",
+    "meaning": "전달; 전송",
     "example": "The researchers studied signal transmission between neighboring cells under different experimental conditions.",
     "category": "Academic",
     "level": "C1"
@@ -652,7 +652,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d073",
     "word": "scathing",
     "pos": "adj.",
-    "meaning": "(비평이) 가차 없이 혹평하는",
+    "meaning": "신랄한",
     "example": "The critic published a scathing review of the director's latest film.",
     "category": "General",
     "level": "C2"
@@ -670,7 +670,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d075",
     "word": "scrupulous",
     "pos": "adj.",
-    "meaning": "(기록·절차가) 철저히 정확하고 세심한",
+    "meaning": "꼼꼼한; 양심적인",
     "example": "The laboratory maintains scrupulous records of every change to its experimental procedures.",
     "category": "Academic",
     "level": "C2"
@@ -688,7 +688,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d077",
     "word": "sedentary",
     "pos": "adj.",
-    "meaning": "주로 앉아서 생활하는",
+    "meaning": "주로 앉아서 지내는",
     "example": "A sedentary routine leaves me restless unless I take regular walking breaks.",
     "category": "General",
     "level": "C2"
@@ -697,7 +697,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d078",
     "word": "seminal",
     "pos": "adj.",
-    "meaning": "중대한 영향을 끼친",
+    "meaning": "중대한 영향을 미치는",
     "example": "Her seminal paper reshaped how researchers study cooperation in complex social systems.",
     "category": "Academic",
     "level": "C2"
@@ -706,7 +706,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d079",
     "word": "serendipity",
     "pos": "n.",
-    "meaning": "뜻밖의 발견을 하는 행운",
+    "meaning": "뜻밖의 행운",
     "example": "A little serendipity led us to the archive containing the missing letters.",
     "category": "Academic",
     "level": "C2"
@@ -715,7 +715,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d080",
     "word": "shrewd",
     "pos": "adj.",
-    "meaning": "(사업·이해관계 판단에) 영리하고 빈틈없는",
+    "meaning": "영리한; 빈틈없는",
     "example": "A shrewd investor considers the risks that enthusiastic competitors tend to overlook.",
     "category": "Business",
     "level": "C2"
@@ -724,7 +724,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d081",
     "word": "sluggish",
     "pos": "adj.",
-    "meaning": "기운 없고 몸이 무거운",
+    "meaning": "굼뜬; 부진한",
     "example": "I felt sluggish all morning after sleeping badly on the overnight train.",
     "category": "General",
     "level": "C2"
@@ -742,7 +742,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d083",
     "word": "solvency",
     "pos": "n.",
-    "meaning": "채무 지급 능력",
+    "meaning": "지급 능력",
     "example": "Auditors questioned the firm's solvency after discovering several undisclosed financial obligations.",
     "category": "Business",
     "level": "C2"
@@ -751,7 +751,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d084",
     "word": "sparse",
     "pos": "adj.",
-    "meaning": "희박한",
+    "meaning": "드문; 희박한",
     "example": "The evidence remains sparse because few researchers have examined this particular phenomenon.",
     "category": "Academic",
     "level": "C2"
@@ -760,7 +760,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d085",
     "word": "spurious",
     "pos": "adj.",
-    "meaning": "인과관계가 없는; 겉보기의",
+    "meaning": "허위의; 겉보기의",
     "example": "The authors rejected a spurious correlation caused by an overlooked seasonal pattern.",
     "category": "Academic",
     "level": "C2"
@@ -778,7 +778,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d087",
     "word": "steadfast",
     "pos": "adj.",
-    "meaning": "흔들림 없는",
+    "meaning": "확고한",
     "example": "Her steadfast support helped me keep going through a difficult final semester.",
     "category": "General",
     "level": "C2"
@@ -814,7 +814,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d091",
     "word": "stringent",
     "pos": "adj.",
-    "meaning": "(규정·기준이) 매우 엄격한",
+    "meaning": "엄격한",
     "example": "Exporters must satisfy stringent quality requirements before entering the pharmaceutical market.",
     "category": "Business",
     "level": "C2"
@@ -823,7 +823,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d092",
     "word": "subdue",
     "pos": "v.",
-    "meaning": "(강한 감정을) 억누르다",
+    "meaning": "억누르다",
     "example": "A quiet evening walk helped subdue the frustration I felt after work.",
     "category": "General",
     "level": "C2"
@@ -832,7 +832,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d093",
     "word": "sublime",
     "pos": "adj.",
-    "meaning": "더없이 아름다운",
+    "meaning": "숭고한; 더없이 아름다운",
     "example": "The orchestra's sublime performance held the entire audience silent until the final note.",
     "category": "General",
     "level": "C2"
@@ -859,7 +859,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d096",
     "word": "subversive",
     "pos": "adj.",
-    "meaning": "기존 질서를 뒤흔드는",
+    "meaning": "체제 전복적인",
     "example": "The novel's subversive humor challenges familiar assumptions about class and social respectability.",
     "category": "Academic",
     "level": "C2"
@@ -868,7 +868,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d097",
     "word": "succinct",
     "pos": "adj.",
-    "meaning": "(설명이) 핵심만 짧고 명료한",
+    "meaning": "간결한",
     "example": "The abstract provides a succinct account of the study's methods and principal findings.",
     "category": "Academic",
     "level": "C2"
@@ -877,7 +877,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d098",
     "word": "succumb",
     "pos": "v.",
-    "meaning": "(압력·유혹에) 무너지다",
+    "meaning": "굴복하다",
     "example": "Do not succumb to pressure to buy equipment before comparing the alternatives.",
     "category": "General",
     "level": "C2"
@@ -904,7 +904,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d101",
     "word": "surmise",
     "pos": "v.",
-    "meaning": "(확실한 증거 없이) 짐작하다",
+    "meaning": "짐작하다",
     "example": "We can only surmise why the original researcher omitted these unusual observations.",
     "category": "Academic",
     "level": "C2"
@@ -922,7 +922,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d103",
     "word": "tacit",
     "pos": "adj.",
-    "meaning": "(말로 표현하지 않아도) 서로 동의한",
+    "meaning": "암묵적인",
     "example": "There was a tacit agreement that nobody would discuss work during dinner.",
     "category": "General",
     "level": "C2"
@@ -940,7 +940,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d105",
     "word": "tenacious",
     "pos": "adj.",
-    "meaning": "(목표를) 집요하게 붙잡고 놓지 않는",
+    "meaning": "끈질긴",
     "example": "Her tenacious pursuit of the missing data eventually resolved the central puzzle.",
     "category": "Academic",
     "level": "C2"
@@ -949,7 +949,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d106",
     "word": "tenet",
     "pos": "n.",
-    "meaning": "핵심 원칙",
+    "meaning": "신조; 원칙",
     "example": "A central tenet of the theory is that individuals respond to incentives.",
     "category": "Academic",
     "level": "C2"
@@ -1021,7 +1021,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d114",
     "word": "trepidation",
     "pos": "n.",
-    "meaning": "앞으로 일어날 일이 두려워 느끼는 떨리는 불안",
+    "meaning": "두려움; 불안",
     "example": "I opened the examination results with trepidation after weeks of anxious waiting.",
     "category": "General",
     "level": "C2"
@@ -1039,7 +1039,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d116",
     "word": "ubiquitous",
     "pos": "adj.",
-    "meaning": "너무 흔하게 퍼져 있어 어디에서나 볼 수 있는",
+    "meaning": "어디에나 있는",
     "example": "Contactless payments have become ubiquitous in shops across the city center.",
     "category": "Business",
     "level": "C2"
@@ -1048,7 +1048,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d117",
     "word": "unequivocal",
     "pos": "adj.",
-    "meaning": "(입장이) 애매함 없이 단호한",
+    "meaning": "명백한; 단호한",
     "example": "The court delivered an unequivocal rejection of discrimination in public employment.",
     "category": "Society",
     "level": "C2"
@@ -1111,7 +1111,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d124",
     "word": "vacillate",
     "pos": "v.",
-    "meaning": "결정을 못 하고 망설이다",
+    "meaning": "망설이다",
     "example": "Investors often vacillate between seeking immediate returns and pursuing longer term growth.",
     "category": "Business",
     "level": "C2"
@@ -1129,7 +1129,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d126",
     "word": "venerate",
     "pos": "v.",
-    "meaning": "깊이 존경하다",
+    "meaning": "존경하다",
     "example": "Many communities venerate elders for preserving stories that connect generations.",
     "category": "Society",
     "level": "C2"
@@ -1201,7 +1201,7 @@ globalThis.WORD_CHUNKS.d = [
     "id": "d134",
     "word": "wary",
     "pos": "adj.",
-    "meaning": "(상대·행동을 믿지 못해) 조심하는",
+    "meaning": "경계하는; 조심하는",
     "example": "Customers became wary of advance payments after several online retailers suddenly disappeared.",
     "category": "Business",
     "level": "C2"

@@ -49,7 +49,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b006",
     "word": "emission",
     "pos": "n.",
-    "meaning": "배출",
+    "meaning": "배출; 배출물",
     "example": "The report measures the emission of harmful gases from factories.",
     "category": "Society",
     "level": "C1"
@@ -58,7 +58,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b007",
     "word": "empirical",
     "pos": "adj.",
-    "meaning": "경험적 자료에 근거한",
+    "meaning": "실증적인",
     "example": "The theory needs empirical evidence before researchers can accept its conclusions.",
     "category": "Academic",
     "level": "C1"
@@ -130,7 +130,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b015",
     "word": "envisage",
     "pos": "v.",
-    "meaning": "(미래 모습이) 어떨지 그려 보다",
+    "meaning": "상상하다; 예상하다",
     "example": "The planners envisage a neighborhood where residents can walk everywhere.",
     "category": "Society",
     "level": "C1"
@@ -157,7 +157,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b018",
     "word": "erode",
     "pos": "v.",
-    "meaning": "신뢰나 기반을 조금씩 침식하여 약화시키다",
+    "meaning": "침식하다; 약화시키다",
     "example": "Repeated broken promises can erode public confidence in elected officials.",
     "category": "Society",
     "level": "C1"
@@ -166,7 +166,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b019",
     "word": "escalate",
     "pos": "v.",
-    "meaning": "(갈등이) 격화되다",
+    "meaning": "격화되다",
     "example": "A minor disagreement can escalate quickly when neither person feels heard.",
     "category": "General",
     "level": "C1"
@@ -175,7 +175,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b020",
     "word": "evaluate",
     "pos": "v.",
-    "meaning": "(효과·성과를 근거로) 평가하다",
+    "meaning": "평가하다",
     "example": "We will evaluate the treatment using data from three clinical trials.",
     "category": "Academic",
     "level": "C1"
@@ -184,7 +184,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b021",
     "word": "evident",
     "pos": "adj.",
-    "meaning": "(감정·사실이) 겉으로 분명히 드러나는",
+    "meaning": "명백한",
     "example": "Her frustration became evident after the third delay was announced.",
     "category": "General",
     "level": "C1"
@@ -211,7 +211,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b024",
     "word": "execute",
     "pos": "v.",
-    "meaning": "(계획·전략을) 실제 행동으로 옮기다",
+    "meaning": "실행하다",
     "example": "Each department must execute the strategy according to the agreed schedule.",
     "category": "Business",
     "level": "C1"
@@ -229,7 +229,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b026",
     "word": "exhibit",
     "pos": "v.",
-    "meaning": "보이다",
+    "meaning": "드러내다; 전시하다",
     "example": "Some materials exhibit unusual properties when exposed to extremely low temperatures.",
     "category": "Academic",
     "level": "C1"
@@ -292,7 +292,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b033",
     "word": "foster",
     "pos": "v.",
-    "meaning": "(신뢰·협력을) 조성하다",
+    "meaning": "조성하다; 육성하다",
     "example": "Regular feedback can foster trust between managers and their team members.",
     "category": "Business",
     "level": "C1"
@@ -310,7 +310,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b035",
     "word": "fundamental",
     "pos": "adj.",
-    "meaning": "(필요·원칙이) 기초가 되는 핵심적인",
+    "meaning": "근본적인; 필수적인",
     "example": "Access to clean water remains a fundamental requirement for healthy communities.",
     "category": "Society",
     "level": "C1"
@@ -328,7 +328,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b037",
     "word": "governance",
     "pos": "n.",
-    "meaning": "관리 및 의사결정 체계",
+    "meaning": "통치; 지배 구조",
     "example": "Investors requested clearer rules on corporate governance before approving the deal.",
     "category": "Business",
     "level": "C1"
@@ -337,7 +337,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b038",
     "word": "hierarchy",
     "pos": "n.",
-    "meaning": "위계 체계",
+    "meaning": "계층 구조",
     "example": "The research examines how social hierarchy affects decision making within groups.",
     "category": "Academic",
     "level": "C1"
@@ -373,7 +373,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b042",
     "word": "illustrate",
     "pos": "v.",
-    "meaning": "(예시로) 이해하기 쉽게 보여 주다",
+    "meaning": "예를 들어 설명하다",
     "example": "These examples illustrate how small changes can produce very different outcomes.",
     "category": "Academic",
     "level": "C1"
@@ -391,7 +391,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b044",
     "word": "implement",
     "pos": "v.",
-    "meaning": "(정책·제도를) 도입해 시행하다",
+    "meaning": "시행하다",
     "example": "The council plans to implement stricter recycling rules next spring.",
     "category": "Society",
     "level": "C1"
@@ -400,7 +400,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b045",
     "word": "implicit",
     "pos": "adj.",
-    "meaning": "(의미·합의가) 직접 명시되지 않은",
+    "meaning": "암묵적인",
     "example": "There was an implicit agreement that everyone would share the cleaning.",
     "category": "General",
     "level": "C1"
@@ -409,7 +409,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b046",
     "word": "incentive",
     "pos": "n.",
-    "meaning": "유인",
+    "meaning": "유인; 장려책",
     "example": "The company offered a financial incentive to reduce unnecessary business travel.",
     "category": "Business",
     "level": "C1"
@@ -436,7 +436,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b049",
     "word": "incorporate",
     "pos": "v.",
-    "meaning": "반영하다",
+    "meaning": "포함하다; 반영하다",
     "example": "The revised design will incorporate feedback from customers and production staff.",
     "category": "Business",
     "level": "C1"
@@ -490,7 +490,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b055",
     "word": "inhibit",
     "pos": "v.",
-    "meaning": "(생장·활동을) 저해하다",
+    "meaning": "억제하다; 저해하다",
     "example": "High temperatures can inhibit the growth of certain beneficial bacteria.",
     "category": "Academic",
     "level": "C1"
@@ -535,7 +535,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b060",
     "word": "integrity",
     "pos": "n.",
-    "meaning": "정직성",
+    "meaning": "정직성; 청렴성",
     "example": "The journalist's integrity earned her the trust of many cautious sources.",
     "category": "Society",
     "level": "C1"
@@ -571,7 +571,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b064",
     "word": "invoke",
     "pos": "v.",
-    "meaning": "원용하다",
+    "meaning": "원용하다; 호소하다",
     "example": "The company may invoke a contract clause to postpone payment.",
     "category": "Business",
     "level": "C1"
@@ -580,7 +580,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b065",
     "word": "isolate",
     "pos": "v.",
-    "meaning": "영향을 따로 살펴보려고 대상을 분리하다",
+    "meaning": "고립시키다; 분리하다",
     "example": "Researchers must isolate each variable to identify what caused the change.",
     "category": "Academic",
     "level": "C1"
@@ -634,7 +634,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b071",
     "word": "eclectic",
     "pos": "adj.",
-    "meaning": "폭넓고 다양한",
+    "meaning": "다양한; 절충적인",
     "example": "Her eclectic music collection includes jazz, folk songs, and electronic albums.",
     "category": "General",
     "level": "C2"
@@ -661,7 +661,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b074",
     "word": "egregious",
     "pos": "adj.",
-    "meaning": "극심한",
+    "meaning": "지독한; 터무니없는",
     "example": "The regulator imposed a heavy fine for egregious breaches of safety rules.",
     "category": "Business",
     "level": "C2"
@@ -742,7 +742,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b083",
     "word": "endemic",
     "pos": "adj.",
-    "meaning": "고질적으로 퍼져 있는",
+    "meaning": "고질적인; 풍토적인",
     "example": "Corruption became endemic after years of weak oversight and political interference.",
     "category": "Society",
     "level": "C2"
@@ -778,7 +778,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b087",
     "word": "enmity",
     "pos": "n.",
-    "meaning": "(집단·국가 사이의) 오랜 적대 관계",
+    "meaning": "적대감",
     "example": "Decades of enmity made negotiations between the neighboring countries especially difficult.",
     "category": "Society",
     "level": "C2"
@@ -796,7 +796,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b089",
     "word": "enumerate",
     "pos": "v.",
-    "meaning": "하나씩 열거하다",
+    "meaning": "열거하다",
     "example": "The report will enumerate the main limitations of the proposed method.",
     "category": "Academic",
     "level": "C2"
@@ -823,7 +823,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b092",
     "word": "equivocal",
     "pos": "adj.",
-    "meaning": "(답변이) 양쪽으로 해석될 수 있는",
+    "meaning": "모호한",
     "example": "The minister gave an equivocal answer about future spending on public transport.",
     "category": "Society",
     "level": "C2"
@@ -850,7 +850,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b095",
     "word": "esoteric",
     "pos": "adj.",
-    "meaning": "소수 전문가만 이해하는",
+    "meaning": "난해한; 전문적인",
     "example": "The seminar covered esoteric aspects of language that few nonspecialists understood.",
     "category": "Academic",
     "level": "C2"
@@ -859,7 +859,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b096",
     "word": "estrange",
     "pos": "v.",
-    "meaning": "소원하게 만들다",
+    "meaning": "소원하게 하다",
     "example": "Years of unresolved arguments can estrange relatives who once shared everything.",
     "category": "General",
     "level": "C2"
@@ -877,7 +877,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b098",
     "word": "evade",
     "pos": "v.",
-    "meaning": "질문이나 추궁을 교묘하게 피하다",
+    "meaning": "회피하다",
     "example": "The executive tried to evade questions about the company's missing financial records.",
     "category": "Business",
     "level": "C2"
@@ -922,7 +922,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b103",
     "word": "expedient",
     "pos": "adj.",
-    "meaning": "당장의 목적에 유리한",
+    "meaning": "방편적인; 편리한",
     "example": "Cutting maintenance seemed expedient, but the decision created serious problems later.",
     "category": "Business",
     "level": "C2"
@@ -931,7 +931,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b104",
     "word": "extenuating",
     "pos": "adj.",
-    "meaning": "정상 참작의 여지가 있는",
+    "meaning": "정상 참작이 가능한",
     "example": "The committee considered her illness an extenuating circumstance when reviewing the delay.",
     "category": "General",
     "level": "C2"
@@ -949,7 +949,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b106",
     "word": "extrapolate",
     "pos": "v.",
-    "meaning": "(일부 자료로) 전체 추세를 추산하다",
+    "meaning": "추정하다; 외삽하다",
     "example": "It is risky to extrapolate national trends from one small regional sample.",
     "category": "Academic",
     "level": "C2"
@@ -958,7 +958,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b107",
     "word": "fastidious",
     "pos": "adj.",
-    "meaning": "(청결·취향에) 유난히 까다로운",
+    "meaning": "까다로운",
     "example": "He is fastidious about kitchen hygiene and checks every surface carefully.",
     "category": "General",
     "level": "C2"
@@ -1030,7 +1030,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b115",
     "word": "galvanize",
     "pos": "v.",
-    "meaning": "행동에 나서게 하다",
+    "meaning": "분발시키다",
     "example": "The flood helped galvanize residents into organizing a coordinated emergency response.",
     "category": "Society",
     "level": "C2"
@@ -1093,7 +1093,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b122",
     "word": "impasse",
     "pos": "n.",
-    "meaning": "합의나 해결책을 찾지 못해 더 나아갈 수 없는 난국",
+    "meaning": "교착 상태",
     "example": "The negotiations reached an impasse when neither side accepted the proposed compromise.",
     "category": "Business",
     "level": "C2"
@@ -1111,7 +1111,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b124",
     "word": "impetus",
     "pos": "n.",
-    "meaning": "(행동·연구를 촉진하는) 새로운 자극",
+    "meaning": "추진력; 자극",
     "example": "The new grant provided fresh impetus for research into affordable energy storage.",
     "category": "Academic",
     "level": "C2"
@@ -1156,7 +1156,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b129",
     "word": "insidious",
     "pos": "adj.",
-    "meaning": "서서히 해를 끼치는",
+    "meaning": "음험한; 서서히 해로운",
     "example": "The insidious effects of sleep deprivation can build up without obvious warning.",
     "category": "General",
     "level": "C2"
@@ -1174,7 +1174,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b131",
     "word": "intransigent",
     "pos": "adj.",
-    "meaning": "(협상에서) 타협을 거부하는",
+    "meaning": "타협하지 않는",
     "example": "The union described management as intransigent after another round of failed negotiations.",
     "category": "Business",
     "level": "C2"
@@ -1183,7 +1183,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b132",
     "word": "juxtapose",
     "pos": "v.",
-    "meaning": "나란히 놓아 비교하다",
+    "meaning": "나란히 놓다",
     "example": "The exhibition will juxtapose historic photographs with recent images of identical streets.",
     "category": "Academic",
     "level": "C2"
@@ -1210,7 +1210,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b135",
     "word": "ludicrous",
     "pos": "adj.",
-    "meaning": "(제안 등이) 우스울 만큼 황당한",
+    "meaning": "터무니없는; 우스꽝스러운",
     "example": "The suggestion that one person could finish everything overnight seemed ludicrous.",
     "category": "General",
     "level": "C2"
@@ -1264,7 +1264,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b141",
     "word": "feedback",
     "pos": "n.",
-    "meaning": "의견",
+    "meaning": "의견; 반응",
     "example": "Students received useful feedback on their essays before submitting the final version.",
     "category": "Academic",
     "level": "B2"
@@ -1318,7 +1318,7 @@ globalThis.WORD_CHUNKS.b = [
     "id": "b147",
     "word": "explain",
     "pos": "v.",
-    "meaning": "(내용·절차를) 알기 쉽게 설명하다",
+    "meaning": "설명하다",
     "example": "Please explain the payment process to every customer before confirming an order.",
     "category": "Business",
     "level": "B1"
